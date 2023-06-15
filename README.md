@@ -1,5 +1,12 @@
 # alexstone-site
 
+Welcome to my portfolio site!  I made this site to show off a bit of my personality and showcase some of the projects I've worked on. 
+
+The portfolio page pulls from the GitHub API to get an always-up-to-date list of my public repos. 
+
+
+## Boiler plate Vue stuff:
+
 ## Project setup
 ```
 npm install

@@ -2,7 +2,7 @@
   <div class="blurb">
         <h1>alex stone</h1>
         <h2>software developer</h2>
-        <p>solving complex problems with creativity and curiousity</p>
+        <p>solving complex problems with creativity and curiosity</p>
 
   </div>
 </template>

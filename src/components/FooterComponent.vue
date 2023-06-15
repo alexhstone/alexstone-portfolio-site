@@ -3,7 +3,7 @@
     <div class="social-media">
         <a href="https://www.linkedin.com/in/alexhstone/" target="_blank">LinkedIn</a>
         <a href="https://github.com/alexhstone" target="_blank">GitHub</a>
-        <a href="#" target="_blank">See The Code...</a>
+        <a href="https://github.com/alexhstone/alexstone-portfolio-site" target="_blank">See The Code...</a>
     </div>
   </footer>
 </template>
