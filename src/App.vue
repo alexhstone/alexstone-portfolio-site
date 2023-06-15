@@ -26,10 +26,11 @@ export default {
 html {
   height: 100%;
   overflow: none;
+  background-color: rgb(235, 255, 250);
 }
 
 body {
-  background-color: white;
+  
   color: #1E2019;
   overflow: hidden;
   margin: 0px;
@@ -64,21 +65,23 @@ body {
 nav {
   display: flex;
   justify-content: flex-end;
-  font-size: 1.5rem;
   grid-area: nav;
   font-family: 'Roboto Mono', monospace;
 }
 
 nav a {
-  font-weight: bold;
   text-decoration: none;
   color: #1E2019;
   line-height: normal;
   padding: 7px; 
 }
 
+nav a:hover{
+  text-decoration: underline;
+}
+
 nav a.router-link-exact-active {
-  text-shadow: rgb(255, 133, 249) 5px 5px 5px;
+  text-shadow: 3px 3px 6px rgba(102, 135, 255, 0.59);
 
 }
 
@@ -86,13 +89,23 @@ nav a.router-link-exact-active {
   margin-top: 7px; 
 }
 
-@media only screen and (max-width: 600px){
-  #app {
-    position: fixed;
-  }
+
+@media screen and (max-width: 900px) {
+        
   nav {
     justify-content: center;
   }
+
+
+      }
+  
+
+
+@media only screen and (max-width: 700px){
+  #app {
+    position: fixed;
+  }
+  
 
 }
 

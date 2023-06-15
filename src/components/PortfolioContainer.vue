@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <portfolio-card class="card" v-for="project in projects" :key="project.id" :project="project" />
+    <p v-if="projects.length < 1">Uh oh!  There's nothing here :(</p>
   </div>
 </template>
 
@@ -14,20 +15,23 @@ export default {
 
   data(){
     return {
+
+        //we will loop through this array and create portfolio cards for each object we get back
+        //each object will be passed as a prop to the portfolio card
         projects: [],
     }
   }, 
 
   created(){
+    //call the github api and ask for a list of "projects" to assign to our projects array in data
     GithubService.getProjects()
     .then(response => {
-
+          
             this.projects = response.data;
         }
     )
-    .catch( error => {this.projects[0] = 
-            {name: 'Uh Oh!', description: 'Something went wrong!', html_url: '#', language: ""} 
-                console.log(error)});
+    //right now, we have a p tag that will render and tell the user something went wrong
+    .catch( error => {console.log(error)});
   }
 
 }

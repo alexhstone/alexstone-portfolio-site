@@ -20,6 +20,7 @@ export default {
         width: 100%;
         height: 3rem;
         padding-left: 2rem;
+        text-transform: lowercase;
     }
 
     .social-media {

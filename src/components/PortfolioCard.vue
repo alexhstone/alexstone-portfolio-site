@@ -23,6 +23,10 @@
 <script>
 export default {
     name: 'portfolio-card',
+
+    //a "project" is an object we get back from the github api
+    //for our purposes, we need it to have the following properties:
+    //language, name, description, html-url
     props: ["project"],
 }
 </script>
@@ -37,6 +41,7 @@ export default {
  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
  cursor: pointer;
  text-decoration: none;
+ color: #1E2019;
 }
 
 .card:hover {

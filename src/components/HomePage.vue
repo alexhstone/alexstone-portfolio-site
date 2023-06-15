@@ -33,7 +33,15 @@ export default {
         width: 40%;
     }
 
-    @media only screen and (max-width: 700px){
+    @media screen and (max-width: 900px) {
+        .blurb {
+            padding-right: 1rem;
+
+        }
+    }
+    
+
+    @media only screen and (max-width: 750px){
         .container {
             scroll-snap-type: y mandatory;
             overflow-x: hidden;
@@ -53,6 +61,7 @@ export default {
             padding-top: 10rem;
             width: 100%;
             grid-area: blurb;
+            text-align: center;
         }
 
         .blurb p{
