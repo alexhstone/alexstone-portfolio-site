@@ -34,19 +34,15 @@ export default {
 </script>
 
 <style scoped>
-    .container {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    height: 100%;
-    width: 90%;
-    overflow: auto;
-    }
-
-
-    @media screen and (max-width: 1200px) {
+ 
       .container {
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            height: 100%;
+            width: 90%;
+            overflow: auto;
             scroll-snap-type: y mandatory;
             height: 70%;
             gap: 2rem;
@@ -60,7 +56,6 @@ export default {
             
         }
 
-    }
 
 
     @media only screen and (max-width: 700px){
